@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mefiglai ID Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+
+    <div class="glass-panel">
+        <h1 id="main-title">Mefiglai ID Web</h1>
+        
+        <div id="auth-section">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-btn">LOGIN</button>
+            <p id="error-msg"></p>
+            <p id="go-to-reg" style="color: #FFD700; cursor: pointer; font-size: 14px; margin-top: 16px;">No passport yet? Apply now</p>
+        </div>
+
+        <div id="reg-section" style="display: none;">
+            <input type="text" id="reg-fname" placeholder="First Name">
+            <input type="text" id="reg-lname" placeholder="Last Name">
+            <input type="text" id="reg-bdate" placeholder="Date of Birth (DD.MM.YYYY)">
+            <input type="text" id="reg-bplace" placeholder="Place of Birth">
+            
+            <select id="reg-gender" style="width: 100%; padding: 12px; margin-bottom: 16px; background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 12px; font-family: inherit; appearance: none;">
+                <option value="M" style="color: black;">MALE</option>
+                <option value="F" style="color: black;">FEMALE</option>
+            </select>
+
+            <input type="email" id="reg-email" placeholder="Email">
+            <input type="password" id="reg-password" placeholder="Password">
+            
+            <button id="register-btn">ISSUANCE PASSPORT</button>
+            <p id="reg-error-msg" style="color: #ff4d4d; font-size: 12px; margin-top: 10px;"></p>
+            <p id="go-to-login" style="color: #FFD700; cursor: pointer; font-size: 14px; margin-top: 16px;">Already a citizen? Login</p>
+        </div>
+
+        <div id="app-section" style="display: none;">
+            <h2 id="welcome-text">Loading...</h2>
+            <button id="logout-btn">LOGOUT</button>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300');
+
+/* Темно-зеленый фон как в приложении */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Geist', serif;
+    background: linear-gradient(135deg, #1E3C00, #0A1400);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Наше стекло (Glassmorphism) */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 { color: #FFD700; /* MefGold */ }
+
+input {
+	font-family: 'Geist', serif;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: white;
+    box-sizing: border-box;
+}
+
+input::placeholder { color: rgba(255, 255, 255, 0.5); }
+input:focus { outline: 1px solid #FFD700; }
+
+button {
+	font-family: 'Geist', serif;
+    width: 100%;
+    padding: 14px;
+    background: rgba(255, 215, 0, 0.15); /* Золотой с прозрачностью */
+    border: 1px solid rgba(255, 215, 0, 0.5);
+    border-radius: 30px; /* Squircle/Капсула */
+    color: #FFD700;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover { background: rgba(255, 215, 0, 0.3); }
+
+#error-msg {
+	font-family: 'Geist', serif;
+    color: #ff4d4d;
+    font-size: 12px;
+    margin-top: 10px;
+}
